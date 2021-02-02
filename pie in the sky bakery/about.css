@@ -1,0 +1,162 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+.menubar:before,
+.menubar:after{
+    content:" ";
+    display:table;
+    clear:both;
+
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://github.com/jen4web/fem-layout/blob/master/day-1-flexbox/4-pie-flexbox/end/img/clouds.png?raw=true);
+    margin:0px;
+    padding:0px;
+}
+.wrapper{
+    width:92%;
+    margin-left:4%;
+    margin:0 auto;
+}
+
+div.row{
+    background-color:bisque;
+}
+nav ul.menubar{
+    list-style-type: none;
+    background-color:#e6bf98;
+    padding:1em;
+    border-bottom:3px solid #cc8850;
+    margin:0;
+    overflow: auto;
+}
+ nav li:nth-child(even){
+    width:50%;
+    float:right;
+    padding:0.5em;
+ }
+ nav li:nth-child(odd){
+    width:50%;
+    float:left;
+    padding:0.5em;
+  }
+  .top{
+      display:flex;
+      flex-flow:column wrap;
+  }
+
+.backgroundpic{
+   height:12px;
+   margin:0%;
+   border:0%;
+   background:url(https://github.com/jen4web/fem-layout/blob/master/day-1-flexbox/4-pie-flexbox/end/img/scallop.png?raw=true) repeat-x;
+}
+nav a{
+    color:#C80060;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color:#00c4c7;
+}
+article img{
+    border-radius: 10px;
+    width:100%;
+    max-width:250px;
+}
+.col-3{
+    margin-left:2%;
+}
+h1{
+    color:#C80060;
+    border-bottom:2px solid #C80060;
+    font-family: 'Niconne', cursive;
+}
+
+blockquote {
+    padding:0px;
+    margin: 0px;
+    border:2px solid #00c4c7;
+    width:64%;
+    margin-left:18%;
+    margin-bottom:2%;
+    text-align:justify;
+    
+    
+} 
+.sidebar-primary h3{
+    margin:0px;
+    padding:0px;
+    background-color:#00c4c7;
+    color:aliceblue;
+    width:64%;
+    margin-left:18%;
+    margin-top:5%;
+    text-align:center;
+
+    
+}
+.sidebar-primary{
+margin-top:50px;
+}
+.sidebar-secondary {
+    margin:0%;
+    padding:0%;
+    border:2px solid #C80060;
+    color:aliceblue;
+    width:64%;
+    margin-left:18%;
+    margin-bottom:5%;
+    margin-top:25px;    
+}
+.sidebar-secondary h3{
+  background-color: #C80060;
+  color: aliceblue;
+  margin:0%;
+  padding:0%;
+  text-align:center;
+}
+cite{
+    display:flex;
+    justify-content: center;
+}
+
+.floatright{
+    float:right;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color:#C80060;
+    
+}
+.footer-a{
+    display:flex;
+    justify-content:center;
+}
+@media(min-width:550px){
+    nav li,
+    nav li:nth-child(even),
+    nav li:nth-child(odd){
+    display:inline-block;
+    float:none;
+    width:auto;
+    padding:0;
+ }
+ nav a{
+    padding:0em 1em 0em 1em;
+ }
+ .top{
+    display:flex;
+    flex-flow:row nowrap;   
+}
+ 
+}

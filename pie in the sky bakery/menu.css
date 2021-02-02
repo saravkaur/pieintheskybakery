@@ -1,0 +1,138 @@
+html{
+    box-sizing:border-box;
+}
+*,*:before,*:after{
+box-sizing:inherit;
+}
+.menubar:before,
+.menubar:after{
+ content:"";
+ display:table;
+ clear:both;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://github.com/jen4web/fem-layout/blob/master/day-1-flexbox/4-pie-flexbox/end/img/clouds.png?raw=true);
+    margin:0px;
+    padding:0px;
+    width:92%;
+    margin-left:4%;
+    margin:0 auto;
+}
+nav ul.menubar{
+    list-style-type: none;
+    background-color: #e6bf98;
+    border-bottom:3px solid #cc8850;
+    padding:1em;
+    margin:0;
+}
+.backgroundpic{
+    height:12px;
+    margin:0%;
+    border:0%;
+    background:url(https://github.com/jen4web/fem-layout/blob/master/day-1-flexbox/4-pie-flexbox/end/img/scallop.png?raw=true) repeat-x;
+ }
+ nav a{
+     color:#C80060;
+     text-decoration: none;
+ }
+ nav li:nth-child(even){
+     float:right;
+     padding:0.5em;
+     width:50%;
+ }
+ nav li:nth-child(odd){
+     float:left;
+     padding:.5em;
+     width:50%;
+
+ }
+ .content{
+    background-color: bisque;
+     
+ }
+ h2,h3,h1{
+     color:#C80060;
+     font-family: 'Niconne', cursive;
+ }
+ h1{
+     border-bottom:2px solid #C80060; 
+     margin-top:0;
+    
+ }
+ .sidebar-primary{
+  margin-left:30px;
+  margin-right:50px;
+  margin-bottom:20px;
+  border:2px solid #00c4c7;
+  border-radius: 10px;
+ }
+ .sidebar-secondary{
+    margin-left:30px;
+    margin-right:50px;
+    border:2px solid #C80060;
+    border-radius: 10px;
+   }
+ .sidebar-primary h2{
+     background-color:#00c4c7;
+     color:white;
+     margin:0;
+     border-radius:10px 10px 0 0;
+     border-bottom:none;
+ }
+ .sidebar-secondary h2{
+    background-color:#C80060;
+    color:white;
+    margin:0;
+    border-radius: 10px 10px 0 0;
+}
+.sidebar-secondary img{
+    border-radius: 10px;
+}
+
+ article{
+     width:92%;
+     margin-left: 4%;
+     margin-bottom:4%
+     
+ }
+ .aside{
+    width:92%;
+     margin: 4%; 
+ }
+ footer{
+     display:flex;
+     justify-content:center;
+ }
+ footer a{
+     text-decoration: none;
+     color:#C80060;
+ }
+ .footer-a{
+    display:flex;
+    justify-content:center;
+ }
+ @media(min-width:550px){
+    .content{
+        background-color: bisque;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:space-around;
+        
+    }
+    nav li,
+    nav li:nth-child(even),
+    nav li:nth-child(odd){
+        display:inline-block;
+        float:none;
+        width:auto;
+        padding:0.5em;
+
+    }
+    h1{
+        margin-top:20px;
+    }
+ }
+ @media(min-width:1000px){
+    
+ }

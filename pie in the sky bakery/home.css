@@ -1,0 +1,177 @@
+html{
+    box-sizing: border-box;
+}
+*,*before,*after{
+    box-sizing: inherit;
+}
+.menubar:before,
+.menubar:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://github.com/jen4web/fem-layout/blob/master/day-1-flexbox/4-pie-flexbox/end/img/clouds.png?raw=true);
+    width:92%;
+    margin:4%;
+    padding:0px;
+}
+.backgroundpic{
+    height:12px;
+    margin:0%;
+    border:0%;
+    background:url(https://github.com/jen4web/fem-layout/blob/master/day-1-flexbox/4-pie-flexbox/end/img/scallop.png?raw=true) repeat-x;
+ }
+ nav ul.menubar{
+     list-style-type: none;
+     background-color:#e6bf98;
+     padding:1em;
+     margin:0;
+    border-bottom:3px solid #cc8850;
+    
+ }
+ nav li:nth-child(even){
+     width:40%;
+     float:right;
+     padding:.5em;
+
+ }
+ nav li:nth-child(odd){
+     width:40%;
+     float:left;
+     padding:.5em;
+ }
+ nav a{
+    color:#C80060;
+    text-decoration: none;    
+ }
+ nav a:hover{
+     color:#00c4c7;
+ }
+ .home{
+   
+     background-color: bisque;
+     margin:0;
+     padding:0;
+     padding-top:40px;
+
+ }
+ h1{
+    width:92%;
+    margin-left:4%;
+     color:#C80060;
+     border-bottom:2px solid #C80060;
+     font-family: 'Niconne', cursive;
+     font-weight:lighter;
+ }
+ p{
+    width:92%;
+    margin-left:4%;
+ }
+ 
+  h2{
+    color:#C80060;
+    font-family: 'Niconne', cursive;
+  }
+  .homeboxes{
+      width:92%;
+      margin:4%;
+      padding-bottom:30px;
+
+  }
+  img{
+      border-radius:10px;
+  }
+  .botton{
+      text-decoration: none;
+      color:white;
+      padding:.5em;
+      border-radius: 10px;
+      background-color:#C80060;
+      
+  }
+  .botton:hover{
+      color:black;
+  } 
+ 
+  footer a{
+      text-decoration: none;
+      color:#C80060;
+  }
+  footer{
+    display:flex; 
+    justify-content:center;
+}
+  .footer-a{
+    display:flex;
+    justify-content:center;
+}
+ @media(min-width:550px){
+   nav li,
+    nav li:nth-child(odd),
+   nav li:nth-child(even){
+       display:inline-block;
+       float:none;
+       padding:0;
+       padding-right:1em;
+       width:auto;
+   }
+   .bckimage{
+       background-image: url("https://github.com/jen4web/fem-layout/blob/master/day-2-grid/18-practice/end/img/header-850.jpg?raw=true"),norepeat;
+      height:100px;
+    }
+   .homeboxes{
+    width:92%;
+    margin-left:4%;
+    padding-bottom:40px;
+    display:grid;
+    grid-template-columns:repeat(2 1fr);
+    grid-template-rows:auto;
+    grid-template-areas:
+    "no1 no2"
+    "no3 no4";
+
+}
+ .no1{
+   grid-area:no1;
+ }
+ .no2{
+   grid-area:no2;
+ }
+ .no3{
+   grid-area:no3;
+ }
+ .no4{
+   grid-area:no4;
+ }
+ }
+ @media(min-width:1000px){
+     .bckimage{
+         background-image:url("https://github.com/jen4web/fem-layout/blob/master/day-2-grid/18-practice/end/img/header-1200.jpg?raw=true");
+         height: 180px;
+     }
+     .homeboxes{
+        width:92%;
+        margin-left:4%;
+        padding-bottom:40px;
+        display:grid;
+        grid-template-columns:repeat(4 1fr);
+        grid-template-rows:auto;
+        grid-template-areas:
+        "no1 no2 no3 no4";
+    
+    }
+     .no1{
+       grid-area:no1;
+     }
+     .no2{
+       grid-area:no2;
+     }
+     .no3{
+       grid-area:no3;
+     }
+     .no4{
+       grid-area:no4;
+     }
+ }
